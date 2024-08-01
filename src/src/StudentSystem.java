@@ -3,8 +3,15 @@ import java.util.Scanner;
 
 public class StudentSystem {
     private static Scanner scanner = new Scanner(System.in);
+    private static ArrayList<Student> list = new ArrayList<>();
+    //初始化一点数据，用于查询
+    static {
+        list.add(new Student("test1","test1",18,"北京"));
+        list.add(new Student("test2","test2",19,"上海"));
+        list.add(new Student("test3","test3",20,"广州"));
+        list.add(new Student("test4","test4",21,"深圳"));
+    }
     public static void StudentManager() {
-        ArrayList<Student> list = new ArrayList<>();
         while (true){
             System.out.println("学生管理系统");
             System.out.println("1:添加学生");

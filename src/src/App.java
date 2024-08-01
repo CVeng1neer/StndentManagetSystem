@@ -6,6 +6,10 @@ public class App {
     private static ArrayList<User> list = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
 
+    //初始化一点数据，用于直接登录
+    static {
+        list.add(new User("test","password","1234567891123456789","12345678911"));
+    }
     public static void main(String[] args) {
 
         while (true) {
